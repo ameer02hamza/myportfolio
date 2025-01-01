@@ -2,20 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer utilities {
+  .hover_active {
+    @apply bg-gradient-to-r from-[#FA5252] to-[#DD2476];
+  }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .active {
+    @apply bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-slate-50;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  body{
+    background-image: url("/images/bg-light.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+ .dark body {
+      background-image: url("/images/bg-image.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: gradientBG 15s ease infinite;
+     
+ 
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  
 }
