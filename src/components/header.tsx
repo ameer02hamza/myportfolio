@@ -1,30 +1,42 @@
 "use client";
-import { toggleTheme } from "@/redux/features/themeSlice";
-import { AppDispatch } from "@/redux/store/store";
+import { toggleMblMenu, toggleTheme } from "@/redux/features/themeSlice";
+import { AppDispatch, RootState } from "@/redux/store/store";
 import React from "react";
 import { FaBarsProgress, FaMoon } from "react-icons/fa6";
-import { IoMdLogIn } from "react-icons/io";
+import { IoMdClose, IoMdLogIn } from "react-icons/io";
 import { MdWbSunny } from "react-icons/md";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 function Header() {
   const dispatch = useDispatch<AppDispatch>();
- const changeTheme = () => {  
-  dispatch(toggleTheme())
- }
+  const isMenuOpen = useSelector((state: RootState) => state.theme.mobileMenu);
+
+  const changeTheme = () => {
+    dispatch(toggleTheme());
+  };
+  const toggleMobileMenu = (e:any) => {
+    e.preventDefault();
+    dispatch(toggleMblMenu());
+  };
   return (
     <nav className="py-5 px-5 lg:py-12 bg-transparent">
       <div className="container flex  justify-between items-center">
         <div className="text-left flex items-center justify-start gap-3">
           <span
-          onClick={changeTheme}
-           className="inline-flex items-center justify-center darkmode w-10 h-10 rounded-full cursor-pointer bg-slate-100 hover:bg-primary hover:text-primary-dark  text-2xl ">
+            onClick={changeTheme}
+            className="inline-flex items-center justify-center darkmode w-10 h-10 rounded-full cursor-pointer bg-slate-100 hover:bg-primary hover:text-primary-dark  text-2xl "
+          >
             <FaMoon className="text-3xl dark-mode-light dark:hidden" />
 
             <MdWbSunny className="text-2xl dark-mode-dark hidden fill-jacarta-700 group-hover:fill-primary-dark group-focus:fill-primary-dark dark:block " />
           </span>
-          <span className="bars lg:hidden w-10 h-10 rounded-full bg-primary text-slate-50 inline-flex items-center justify-center cursor-pointer">
-            <FaBarsProgress />
+          <span
+            onClick={toggleMobileMenu}
+            className="bars lg:hidden w-10 h-10 rounded-full bg-primary
+             text-slate-50 inline-flex items-center justify-center cursor-pointer"
+          >
+          {!isMenuOpen? <IoMdClose size={25} className="text-red-500 dark:text-white" />  :
+          <FaBarsProgress className="text-red-500 dark:text-white" size={25} />}
           </span>
         </div>
         <div>

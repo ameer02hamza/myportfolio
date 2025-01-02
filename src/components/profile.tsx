@@ -1,14 +1,13 @@
 import React from "react";
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaDribbble,
   FaLinkedin,
   FaMobileScreen,
   FaLocationDot,
   FaEnvelopeOpenText,
   FaCalendarDays,
   FaDownload,
+  FaGithub,
+  FaInstagram,
 } from "react-icons/fa6";
 
 function Profile() {
@@ -29,30 +28,25 @@ function Profile() {
         <div className="flex justify-center space-x-3">
           <a
             href="#"
-            className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#1773EA] hover:text-slate-50"
+            className="w-10 h-10 rounded bg-light-gray flex items-center 
+            justify-center shadow-md dark:bg-slate-800 hover:hover_active text-[#1773EA] hover:text-slate-50"
           >
-            <FaFacebookF />{" "}
+         <FaLinkedin size={25} />{" "}
           </a>
           <a
             href="#"
-            className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#1C9CEA] hover:text-slate-50"
+            className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-slate-800 hover:hover_active text-slate-800 hover:text-slate-50"
           >
-            <FaTwitter />{" "}
+             <FaGithub  size={25} className="text-slate-800 dark:text-white" />{" "}
           </a>
           <a
             href="#"
-            className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#e14a84] hover:text-slate-50"
+            className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-slate-800 hover:hover_active text-[#e14a84] hover:text-slate-50"
           >
-            <FaDribbble />{" "}
-          </a>
-          <a
-            href="#"
-            className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-mid-dark hover:hover_active text-[#0072b1] hover:text-slate-50"
-          >
-            <FaLinkedin />{" "}
+            <FaInstagram size={25} />{" "}
           </a>
         </div>
-        <ul className="flex flex-col bg-light-gray dark:bg-mid-dark px-7 py-8 rounded-2xl mt-10">
+        <ul className="flex flex-col bg-light-gray dark:bg-slate-800 px-7 py-8 rounded-2xl mt-10">
           <li className="flex items-center gap-6 border-b border-slate-300 py-3">
             <div className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-[#111111] hover:hover_active group cursor-pointer">
               <FaMobileScreen className="text-pink-600 text-2xl group-hover:text-slate-50" />

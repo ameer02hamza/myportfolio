@@ -1,6 +1,6 @@
 import React from "react";
-import Wrapper from "../components/wrapper";
-import CopyRights from "../components/rights";
+import Wrapper from "../../components/wrapper";
+import CopyRights from "../../components/rights";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 

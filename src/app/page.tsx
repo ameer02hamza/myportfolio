@@ -18,43 +18,52 @@ import {
   FaMobileScreen,
   FaTwitter,
 } from "react-icons/fa6";
-import Header from "./components/header";
-import MobileNav from "./components/nmbl-nav";
-import Profile from "./components/profile";
-import NavBar from "./components/nav";
-import Card from "./components/card";
-import Wrapper from "./components/wrapper";
-import CopyRights from "./components/rights";
+import Header from "../components/header";
+import MobileNav from "../components/nmbl-nav";
+import Profile from "../components/profile";
+import NavBar from "../components/nav";
+import Card from "../components/card";
+import Wrapper from "../components/wrapper";
+import CopyRights from "../components/rights";
+import { expertiseList } from "../consts/card.conts";
 
 function Startup() {
   return (
-    <Wrapper >
-       <div className=" bg-slate-50 dark:bg-[#111111] rounded-xl mb-14">
-                  <div className="pt-16 px-12 mt-8">
-                    <div>
-                      <h2 className="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52">
-                        About Me
-                      </h2>
-                      <p className="text-gray-700 dark:text-slate-500 leading-7 font-medium">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sequi, unde laudantium inventore perspiciatis officia minima et facilis eaque id nobis consequuntur, dolor delectus laboriosam? Quibusdam repudiandae culpa molestias excepturi.
-                      </p>
-                      <p className="text-gray-700 dark:text-slate-500 leading-7 font-medium mt-3">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel voluptatem delectus harum dignissimos? Aliquid veniam, nobis soluta expedita perferendis officiis reprehenderit, natus quisquam et culpa optio laboriosam placeat eligendi sint.
-                      </p>
-  
-                      <h3 className="text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4">
-                        What I do!
-                      </h3>
-                    </div>
-                    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
-                 {
-                  Array.from({ length: 6 }).map((_, i) => (
-                    <Card title="" description="" icon="" key={i} />
-                  ))
-                 }
-                   
-                    </div>
-                    {/* <div>
+    <Wrapper>
+      <div className=" bg-slate-50 dark:bg-[#111111] rounded-xl mb-14">
+        <div className="pt-16 px-12 mt-8">
+          <div>
+            <h2 className="text-4xl text-slate-900 font-roboto-slab dark:text-slate-50 font-bold relative after:contents[] after:w-36 after:h-[2px] after:bg-primary after:absolute after:top-1/2 -translate-y-1/2 after:right-8 after:left-52">
+              About Me
+            </h2>
+            <p className="text-gray-700 dark:text-slate-500 leading-7 font-medium">
+              I am a Senior Software Developer and majorly develop scalable web
+              and mobile applications, with experience in Next.js, React, Redux,
+              and Flutter. Quite familiar with Single Page Application
+              Development along with Cross-platform Application Development, I
+              chiefly work on high-performance user-centric products. My
+              experience spreads to areas like banking, automobile, and
+              government projects such as airports and real estate platforms.{" "}
+            </p>
+            <p className="text-gray-700 dark:text-slate-500 leading-7 font-medium mt-1">
+              Offering customer support for product-related issues.
+            </p>
+
+            <h3 className="text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4">
+              What I do!
+            </h3>
+          </div>
+          <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+            {expertiseList.map((expertise, index) => (
+              <Card
+                title={expertise.title}
+                description={expertise.description}
+                icon={expertise.icon}
+                key={index}
+              />
+            ))}
+          </div>
+          {/* <div>
                       <h3 className="text-4xl text-slate-900 dark:text-slate-50 font-semibold pt-6 pb-4">
                         My Client!
                       </h3>
@@ -79,9 +88,9 @@ function Startup() {
                         </div>
                       </div>
                     </div> */}
-                  </div>
-                  <CopyRights />
-                </div>
+        </div>
+        <CopyRights />
+      </div>
     </Wrapper>
   );
 }
