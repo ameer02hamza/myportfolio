@@ -14,25 +14,28 @@
 }
 
 @layer base {
-  body{
+  body {
     background-image: url("/images/bg-light.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-  
+    animation: gradientBG 60s ease infinite;
   }
- .dark body {
-      background-image: url("/images/bg-image.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      animation: gradientBG 15s ease infinite;
-     
- 
-    }
+  .dark body {
+    background-image: url("/images/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: gradientBG 60s ease infinite;
+  }
 
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
     }
-  
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }

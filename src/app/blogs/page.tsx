@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "../../components/wrapper";
 import CopyRights from "../../components/rights";
-import BlogCard from "@/components/blog";
+import BlogCard from "@/components/blog-card";
 import { blogsList } from "@/consts/card.conts";
 
 function Blogs() {
