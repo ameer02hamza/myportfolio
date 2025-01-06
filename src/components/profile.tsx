@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+
 import {
   FaLinkedin,
   FaMobileScreen,
@@ -15,7 +17,7 @@ function Profile() {
     <div className=" col-span-12 lg:col-span-4">
       <div className="bg-slate-100 dark:bg-[#111111] rounded-2xl mt-10 lg:mb-10 py-10 md:sticky top-40 left-0">
         <div className="overflow-hidden rounded-lg -mt-48 text-center w-60 h-60 m-auto">
-          <img src="/images/myprofile.jpg" alt="Profile image" />
+          <Image src="/images/myprofile.jpg" alt="Profile image" />
         </div>
         <div className="text-center">
           <h2 className="mt-6 mb-1 text-4xl font-semibold dark:text-white">
@@ -27,22 +29,25 @@ function Profile() {
         </div>
         <div className="flex justify-center space-x-3">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/ameer-hamza-549420184?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" rel="noreferrer"
             className="w-10 h-10 rounded bg-light-gray flex items-center 
             justify-center shadow-md dark:bg-slate-800 hover:hover_active text-[#1773EA] hover:text-slate-50"
           >
          <FaLinkedin size={25} />{" "}
           </a>
           <a
-            href="#"
+            href="https://github.com/ameer02hamza/"
             className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-slate-800 hover:hover_active text-slate-800 hover:text-slate-50"
+          target="_blank" rel="noreferrer"
           >
              <FaGithub  size={25} className="text-slate-800 dark:text-white" />{" "}
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/ameer2hamza/?igsh=NWZsYW84dmMzZHZz"
             className="w-10 h-10 rounded bg-light-gray flex items-center justify-center shadow-md dark:bg-slate-800 hover:hover_active text-[#e14a84] hover:text-slate-50"
-          >
+         target="_blank" rel="noreferrer"
+         >
             <FaInstagram size={25} />{" "}
           </a>
         </div>

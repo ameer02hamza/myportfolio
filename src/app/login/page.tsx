@@ -1,26 +1,20 @@
 "use client";
 import Header from "@/components/header";
-import { EncryptionService } from "@/services/encryption.service";
 import localApi from "@/services/repositories/api-agent";
-import React, { useEffect } from "react";
+import React from "react";
 
 function LoginPage() {
-  // const pswd = "password@123!4";
-  // useEffect(() => {
-  //  var data =  EncryptionService.encrypt(pswd);
-  //  console.log(data, "Encrypted Data");
 
-  // }, []);
 
   const handleLogin = async () => {
     try {
-      var apiData = {
+      const apiData = {
         email: "ameerhamza@gmail.com",
         password: "password@123!4",
       };
       console.log(apiData, "apiData");
       
-      var resp = await localApi.post("/api/auth/login", apiData);
+      const resp = await localApi.post("/api/auth/login", apiData);
       console.log(resp, "response");
     } catch (error) {
       console.log(error, "error");

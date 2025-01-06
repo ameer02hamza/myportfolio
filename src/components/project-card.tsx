@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import ShowModal from "./modal";
 
 function ProjectCard({
   image,
   title,
   description,
-  details,
   id,
   index,
 }: {
@@ -14,11 +14,10 @@ function ProjectCard({
   title: string;
   description: string;
   id: string;
-  details: string;
   index: number;
 }) {
   const [showModal, setShowModal] = useState(false);
-  const handleModal = (e: any) => {
+  const handleModal = (e) => {
     e.preventDefault();
     console.log("clicked", showModal);
 
@@ -29,10 +28,10 @@ function ProjectCard({
       <div className="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2">
         <div className="overflow-hidden rounded-lg ">
           <a onClick={handleModal}>
-            <img
+            <Image
               className="rounded-lg w-full h-48  cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
               src={image}
-              alt="Project image"
+              alt={`project image ${id }`}
             />
           </a>
         </div>

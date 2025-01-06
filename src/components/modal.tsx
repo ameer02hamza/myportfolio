@@ -7,7 +7,7 @@ function ShowModal({
   handleModal,
 }: {
   index: number;
-  handleModal: any;
+  handleModal: (e) => void;
 }) {
   return (
     <div className="h-screen w-screen bg-black bg-opacity-50 fixed top-0 left-0 grid place-items-center z-[99]">

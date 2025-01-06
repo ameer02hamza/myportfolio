@@ -88,7 +88,7 @@ function Resume() {
             </div>
             <div>
               <h3 className="text-3xl dark:text-white font-medium pb-8">
-                knowledge's
+                knowledge&apos;s
               </h3>
               <div className="flex flex-wrap gap-4">
                 {knowledgeList.map((knowledge, index) => (

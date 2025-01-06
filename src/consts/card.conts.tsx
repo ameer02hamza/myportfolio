@@ -1,6 +1,5 @@
-import { link } from "fs";
-import { title } from "process";
-import { FaHtml5, FaMobile, FaRobot } from "react-icons/fa6";
+
+import { FaHtml5, FaRobot } from "react-icons/fa6";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { TbDeviceMobileCode } from "react-icons/tb";
 
@@ -98,15 +97,17 @@ export const skillLists = [
 
     percent: "95%",
   },
-  { title: "Time Management", percent: "97%" },
+  
   {
     title: "Customer Support",
     percent: "80%",
   },
+  { title: "Time Management", percent: "97%" },
   {
     title: "Team Collaboration",
     percent: "85%",
   },
+
   {
     title: "Team Management",
     percent: "90%",
@@ -133,7 +134,7 @@ export const blogsList = [
   {
     id: "3",
     image: "/images/blog.jpg",
-    date: "21 April",
+    date: "Coming Soon",
     title: "How to Integrate Localization in next.js",
     description:
       "this article will explain how to integrate localization in next.js using next-intl",
@@ -149,7 +150,7 @@ export const blogsList = [
   {
     id: "5",
     image: "/images/blog.jpg",
-    date: "21 April",
+    date: "Coming Soon",
     title: "How to Integrate TAP Payment in Next.js",
     description:
       "This article will explain how to integrate TAP payment in Next.js.",

@@ -6,7 +6,6 @@ import {
   FaBlogger,
   FaFileLines,
   FaHive,
-  FaHouse,
   FaHouseChimney,
 } from "react-icons/fa6";
 import { useSelector } from "react-redux";

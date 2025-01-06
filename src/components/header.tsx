@@ -4,7 +4,7 @@ import { AppDispatch, RootState } from "@/redux/store/store";
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 import { FaBarsProgress, FaMoon } from "react-icons/fa6";
-import { IoMdClose, IoMdLogIn } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 import { MdWbSunny } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -17,7 +17,7 @@ function Header() {
   const changeTheme = () => {
     dispatch(toggleTheme());
   };
-  const toggleMobileMenu = (e: any) => {
+  const toggleMobileMenu = (e) => {
     e.preventDefault();
     dispatch(toggleMblMenu());
   };

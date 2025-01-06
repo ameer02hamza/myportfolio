@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 const prisma = new PrismaClient();
 export async function POST(req: NextRequest) {
   try {
-    var body = await req.json();
+    const body = await req.json();
     const { email, password } = body;
     const user = await prisma.user.findUniqueOrThrow({
       where: {
@@ -19,6 +19,6 @@ export async function POST(req: NextRequest) {
     }
     return NextResponse.json({ error: "Invalid Credentials" }, { status: 400 });
   } catch (error) {
-    return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
+    return NextResponse.json({ error: error }, { status: 400 });
   }
 }

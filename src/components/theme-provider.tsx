@@ -1,8 +1,7 @@
 "use client";
-import { setTheme, toggleTheme } from "@/redux/features/themeSlice";
-import { AppDispatch, RootState } from "@/redux/store/store";
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import {  RootState } from "@/redux/store/store";
+import React, { useEffect } from "react";
+import {  useSelector } from "react-redux";
 
 function ThemeProvider({ children }: { children: React.ReactNode }) {
   const appTheme = useSelector((state: RootState) => state.theme);
