@@ -37,17 +37,13 @@ function Work() {
                 />
               ))}
             </div>
-         
-          </div>
-       
-        </div>
-<div className="">
-<Pagination
+            <Pagination
               records={projectsList}
               onPageChange={handlePageChange}
               recordsPerPage={recordsPerPage}
             />
-</div>
+          </div>
+        </div>
         <CopyRights />
       </section>
     </Wrapper>
