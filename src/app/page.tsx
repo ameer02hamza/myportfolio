@@ -47,22 +47,22 @@ function Startup() {
                       </h3>
                       <div className="brand_slider py-6 px-6 rounded-xl dark:bg-slate-800 flex justify-between">
                         <div className="slide_item py-4 px-8 rounded-md">
-                          <Image src="/images/slide-item-1.png" alt="image" />
+                          <img src="/images/slide-item-1.png" alt="image" />
                         </div>
                         <div className="slide_item py-4 px-8 rounded-md">
-                          <Image src="/images/slide-item-2.png" alt="image" />
+                          <img src="/images/slide-item-2.png" alt="image" />
                         </div>
                         <div className="slide_item py-4 px-8 rounded-md">
-                          <Image src="/images/slide-item-3.png" alt="image" />
+                          <img src="/images/slide-item-3.png" alt="image" />
                         </div>
                         <div className="slide_item py-4 px-8 rounded-md">
-                          <Image src="/images/slide-item-4.png" alt="image" />
+                          <img src="/images/slide-item-4.png" alt="image" />
                         </div>
                         <div className="slide_item py-4 px-8 rounded-md">
-                          <Image src="/images/slide-item-1.png" alt="image" />
+                          <img src="/images/slide-item-1.png" alt="image" />
                         </div>
                         <div className="slide_item py-4 px-8 rounded-md">
-                          <Image src="/images/slide-item-2.png" alt="image" />
+                          <img src="/images/slide-item-2.png" alt="image" />
                         </div>
                       </div>
                     </div> */}

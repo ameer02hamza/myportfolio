@@ -63,7 +63,7 @@
             </div>
             <div>
                 <div>
-                    <Image src="https://thembatman0.github.io/hosted-assets/untitled.png" width="500" height="500" />
+                    <img src="https://thembatman0.github.io/hosted-assets/untitled.png" width="500" height="500" />
                 </div>
             </div>
         </div>

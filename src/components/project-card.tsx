@@ -28,10 +28,11 @@ function ProjectCard({
       <div className="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2">
         <div className="overflow-hidden rounded-lg ">
           <a onClick={handleModal}>
-            <Image
+            <img
               className="rounded-lg w-full h-48  cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
               src={image}
               alt={`project image ${id }`}
+              
             />
           </a>
         </div>

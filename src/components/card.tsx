@@ -27,7 +27,7 @@ export default Card;
 {
   /* <div className="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
 <div>
-  <Image
+  <img
     className="w-28"
     src="/images/icons/icon-2.svg"
     alt="icon-2"
@@ -45,7 +45,7 @@ export default Card;
 </div>
 <div className="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
 <div>
-  <Image
+  <img
     className="w-28"
     src="/images/icons/icon-3.svg"
     alt="icon-3"
@@ -63,7 +63,7 @@ export default Card;
 </div>
 <div className="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
 <div>
-  <Image
+  <img
     className="w-28"
     src="/images/icons/icon-4.svg"
     alt="icon-4"
@@ -81,7 +81,7 @@ export default Card;
 </div>
 <div className="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
 <div>
-  <Image
+  <img
     className="w-28"
     src="/images/icons/icon-5.svg"
     alt="icon-5"
@@ -99,7 +99,7 @@ export default Card;
 </div>
 <div className="p-4 rounded-md border border-slate-200 dark:border-slate-800 flex gap-5">
 <div>
-  <Image
+  <img
     className="w-28"
     src="/images/icons/icon-6.svg"
     alt="icon-6"

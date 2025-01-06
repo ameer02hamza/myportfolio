@@ -23,13 +23,13 @@ function Pagination({
   ]);
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center items-center">
       <nav className="bg-gray-200 dark:bg-slate-700 rounded-full px-4 py-2">
         <ul className="flex text-gray-600 gap-4 font-medium py-2">
           <li className="cursor-pointer">
             <a
               onClick={() => currentPage > 1 && paginate(currentPage - 1)}
-              className="rounded-full px-4 py-2 text-gray-300 dark:text-gray-600"
+              className="rounded-full  py-2 text-gray-300 dark:text-gray-600"
             >
               Prev
             </a>
@@ -51,7 +51,7 @@ function Pagination({
               onClick={() =>
                 currentPage < totalPages && paginate(currentPage + 1)
               }
-              className="rounded-full px-4 py-2 text-gray-300 dark:text-gray-600"
+              className="rounded-full py-2 text-gray-300 dark:text-gray-600"
             >
               Next
             </a>

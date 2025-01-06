@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 import {
   FaLinkedin,
@@ -15,9 +14,9 @@ import {
 function Profile() {
   return (
     <div className=" col-span-12 lg:col-span-4">
-      <div className="bg-slate-100 dark:bg-[#111111] rounded-2xl mt-10 lg:mb-10 py-10 md:sticky top-40 left-0">
+      <div className="bg-slate-100 dark:bg-[rgb(17,17,17)] rounded-2xl mt-10 lg:mb-10 py-10 md:sticky top-40 left-0">
         <div className="overflow-hidden rounded-lg -mt-48 text-center w-60 h-60 m-auto">
-          <Image src="/images/myprofile.jpg" alt="Profile image" />
+          <img src="/images/myprofile.jpg" alt="Profile image"  />
         </div>
         <div className="text-center">
           <h2 className="mt-6 mb-1 text-4xl font-semibold dark:text-white">
