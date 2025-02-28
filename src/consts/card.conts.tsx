@@ -296,7 +296,7 @@ export const projectsList = [
   },
   {
     id: "15",
-    image: "/images/sightsaves.png",
+    image: "/images/school.png",
     date: "",
     title: "School Management System",
     description: "Application for managing multiple schools.",
