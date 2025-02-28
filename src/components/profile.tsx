@@ -106,7 +106,7 @@ function Profile() {
         </ul>
         <div className="text-center mt-10">
           <a
-            href="/images/cv.pdf"
+            href="/images/AmeerHamza(FrontendDeveloper).pdf"
             className="inline-flex justify-center items-center rounded-[60px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] py-3 px-6 text-slate-50"
           >
             <FaDownload className="mx-2" />

@@ -284,14 +284,6 @@ export const projectsList = [
     details:
       "Share My Dine is a unique initiative in the UK that transforms homemade meals into meaningful connections. The idea is to turn homes into small restaurants where hosts can share their culinary creations with guests. This platform allows people to experience diverse cuisines, attend cultural events, and enjoy personalized dining experiences in a home setting. It promotes gatherings centered around healthy and hygienic food, fostering a sense of community and well-being.",
   },
-  // {
-  //   id: "13",
-  //   image: "/images/blog.jpg",
-  //   date: "",
-  //   title: "SurveillancePro Nadra",
-  //   description: "Surveillance application for NADRA.",
-  //   details: "Details",
-  // },
   {
     id: "14",
     image: "/images/sightsaves.png",
@@ -301,5 +293,14 @@ export const projectsList = [
       "Application for eye hospitals who were using laser technology.",
     details:
       "Sightsavers is a charity organization in Pakistan that provides eye treatment using laser technology. The organization manages records of all patients, ensuring they receive proper care and follow-up treatments. Their services include diagnosing and treating common eye conditions such as cataracts and glaucoma, and promoting inclusive eye care services to reach marginalized groups.",
+  },
+  {
+    id: "15",
+    image: "/images/sightsaves.png",
+    date: "",
+    title: "School Management System",
+    description: "Application for managing multiple schools.",
+    details:
+      "The School Management System is a comprehensive application designed to manage multiple schools efficiently. It supports multiple admins and students, allowing for seamless administration and student management. Key features include student enrollment, attendance tracking, grade management, and communication tools for teachers, students, and parents. The system also provides detailed reporting and analytics to help school administrators make informed decisions.",
   },
 ];
