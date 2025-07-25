@@ -18,7 +18,6 @@ function ProjectCard({
   const [showModal, setShowModal] = useState(false);
   const handleModal = (e) => {
     e.preventDefault();
-    console.log("clicked", showModal);
 
     setShowModal(!showModal);
   };
@@ -46,7 +45,7 @@ function ProjectCard({
           <a onClick={handleModal}>{description}</a>
         </h3>
       </div>
-      {showModal ? <ShowModal index={index} handleModal={handleModal} /> : null}
+      {showModal ? <ShowModal index={parseInt(id.toString())} handleModal={handleModal} /> : null}
     </>
   );
 }

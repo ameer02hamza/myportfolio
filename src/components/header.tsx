@@ -18,6 +18,8 @@ function Header() {
     dispatch(toggleTheme());
   };
   const toggleMobileMenu = (e) => {
+    console.log("hello");
+    
     e.preventDefault();
     dispatch(toggleMblMenu());
   };
@@ -47,8 +49,8 @@ function Header() {
           </span>
           <span
             onClick={toggleMobileMenu}
-            className="bars lg:hidden w-10 h-10 rounded-full bg-primary
-             text-slate-50 inline-flex items-center justify-center cursor-pointer"
+            className={`bars lg:hidden w-10 h-10 rounded-full bg-primary
+             text-slate-50 inline-flex items-center justify-center cursor-pointer`}
           >
             {!isMenuOpen ? (
               <IoMdClose size={25} className="text-red-500 dark:text-white" />

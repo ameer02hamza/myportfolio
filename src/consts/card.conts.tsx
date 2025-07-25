@@ -167,7 +167,7 @@ export const blogsList = [
 
 export const projectsList = [
   {
-    id: "2",
+    id: "1",
     image: "/images/dib.png",
     date: "",
     title: "TeleBilling DIB",
@@ -178,7 +178,7 @@ export const projectsList = [
       "TeleBilling DIB features advanced reporting capabilities, including graphical representations and a robust dashboard for comprehensive insights and analysis.",
   },
   {
-    id: "3",
+    id: "2",
     image: "/images/videocalldxb.png",
     date: "",
     title: "Video callings For Dubai Immigration",
@@ -188,7 +188,7 @@ export const projectsList = [
       "This application is built on Avaya Spaces and features an integrated queue system to manage call flow efficiently. Additionally, it is linked with SignalR for real-time communication, ensuring seamless and instant interactions between users and immigration representatives.",
   },
   {
-    id: "4",
+    id: "3",
     image: "/images/azizi.jpg",
     date: "",
     title: "Azizi LeadsManager",
@@ -198,7 +198,7 @@ export const projectsList = [
       "This real-time communication with leads helps CSRs provide a personalized and efficient service experience, streamlining customer interactions and enhancing overall satisfaction. Additionally, all information is handled within the reporting dashboard, categorizing interactions as informational calls, complaints, or feedback to provide detailed insights and support continuous improvement.",
   },
   {
-    id: "5",
+    id: "4",
     image: "/images/domios.png",
     date: "",
     title: "Domino's Sales Dashboard",
@@ -209,7 +209,7 @@ export const projectsList = [
       "This integrated approach helps streamline operations, enhance customer satisfaction, and drive business growth.",
   },
   {
-    id: "6",
+    id: "5",
     image: "/images/cave.png",
     date: "",
     title: "Cave Application",
@@ -219,7 +219,7 @@ export const projectsList = [
       "Cave includes features such as online chat, document approval, video and audio calls, and conferences, making it a comprehensive solution for modern communication needs.",
   },
   {
-    id: "7",
+    id: "6",
     image: "/images/ipark.png",
     date: "",
     title: "IPark KSA",
@@ -228,7 +228,7 @@ export const projectsList = [
       "iPark is a user-friendly mobile application available on both iOS and Android platforms, designed to simplify parking and vehicle management. Users can register and log in to access various features, including adding and managing vehicle details, paying for parking using cards, and receiving parking reminders. Additionally, users can submit support tickets and pay parking-related fines directly through the app. The app ensures a secure, convenient, and time-saving experience for all users.",
   },
   {
-    id: "15",
+    id: "7",
     image: "/images/ipark.png",
     date: "",
     title: "IPark Web App KSA",
@@ -285,7 +285,7 @@ export const projectsList = [
       "Share My Dine is a unique initiative in the UK that transforms homemade meals into meaningful connections. The idea is to turn homes into small restaurants where hosts can share their culinary creations with guests. This platform allows people to experience diverse cuisines, attend cultural events, and enjoy personalized dining experiences in a home setting. It promotes gatherings centered around healthy and hygienic food, fostering a sense of community and well-being.",
   },
   {
-    id: "14",
+    id: "13",
     image: "/images/sightsaves.png",
     date: "",
     title: "SightSavers",
@@ -295,8 +295,8 @@ export const projectsList = [
       "Sightsavers is a charity organization in Pakistan that provides eye treatment using laser technology. The organization manages records of all patients, ensuring they receive proper care and follow-up treatments. Their services include diagnosing and treating common eye conditions such as cataracts and glaucoma, and promoting inclusive eye care services to reach marginalized groups.",
   },
   {
-    id: "15",
-    image: "/images/school.png",
+    id: "14",
+    image: "/images/school.png",  
     date: "",
     title: "School Management System",
     description: "Application for managing multiple schools.",

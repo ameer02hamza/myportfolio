@@ -1,12 +1,13 @@
-import { projectsList } from "@/consts/card.conts";
 import React from "react";
 import { ImCross } from "react-icons/im";
 
-function ShowModal({
-  index,
+function AlertModal({
+  title,
+  description,
   handleModal,
 }: {
-  index: number;
+  title: string;
+  description: string;
   handleModal: (e) => void;
 }) {
   return (
@@ -15,7 +16,7 @@ function ShowModal({
         <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
           <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-              {projectsList[index-1].title}
+              {title}
             </h3>
             <button
               onClick={handleModal}
@@ -29,7 +30,7 @@ function ShowModal({
           </div>
           <div className="p-4 md:p-5 space-y-4">
             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-              {projectsList[index-1].details}
+              {description}
             </p>
           </div>
         </div>
@@ -38,4 +39,4 @@ function ShowModal({
   );
 }
 
-export default ShowModal;
+export default AlertModal;
