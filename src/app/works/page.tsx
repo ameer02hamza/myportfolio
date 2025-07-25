@@ -33,7 +33,6 @@ function Work() {
                   title={project.title}
                   image={project.image}
                   id={project.id}
-                  index={index}
                 />
               ))}
             </div>

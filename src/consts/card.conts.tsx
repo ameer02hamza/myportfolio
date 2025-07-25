@@ -38,13 +38,13 @@ export const expertiseList = [
 ];
 
 export const educationList = [
-  {
-    duration: "2025-Pesent",
-    title: "Masters of Science in Computer Science",
-    institution: "EPITA - School of Engineering and Computer Science",
-    location: "Paris, France",
-    link: "https://www.epita.fr/",
-  },
+  // {
+  //   duration: "2025-Pesent",
+  //   title: "Masters of Science in Computer Science",
+  //   institution: "EPITA - School of Engineering and Computer Science",
+  //   location: "Paris, France",
+  //   link: "https://www.epita.fr/",
+  // },
   {
     duration: "2016-2020",
     title: "Bachelor of Science in Computer Science",
@@ -79,12 +79,13 @@ export const knowledgeList = [
   "Bloc Pattern, GetX",
   "Web Rtc",
   "Xcode",
+  "RabitMq, Mqtt",
   "Firebase, FCM , APN Notifications",
   "RESTful APIs",
   "Payment Gateway Integration",
   "Apple Store, Google Play Store",
   "Git",
-  "CPanels, WHM",
+  "CPanels, WHM, VPS",
   "Jira",
   "Confluence",
   "Postman",
