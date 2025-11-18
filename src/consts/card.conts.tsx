@@ -56,11 +56,18 @@ export const educationList = [
 
 export const workExperienceList = [
   {
-    duration: "Dec 2021- Present",
+    duration: "Oct 2022- Present",
     title: "Software Developer",
     institution: "ICAD-KSA",
     location: "Abu Dhabi, UAE",
     link: "https://www.icad.com/",
+  },
+  {
+    duration: "Dec 2021- Oct 2022",
+    title: "Software Developer",
+    institution: "Topaz",
+    location: "Dubai, UAE",
+    link: "https://www.topaztel.com",
   },
   {
     duration: "Jan 2020- Nov 2021",
