@@ -223,7 +223,7 @@ export default function PrivacyPolicy() {
             <strong className="text-white/90">
               exclusively on your device
             </strong>{" "}
-            using Android's local storage mechanisms. This data:
+            using Android&apos;s local storage mechanisms. This data:
           </p>
           <ul className="mt-4 space-y-2">
             {[
@@ -255,7 +255,7 @@ export default function PrivacyPolicy() {
         </Section>
 
         {/* Section: Children */}
-        <Section number="6" title="Children's Privacy">
+        <Section number="6" title="Children&apos;s Privacy">
           <p>
             This app does not knowingly collect any information from children
             under the age of 13. Since no data is collected from any user, the
@@ -267,7 +267,7 @@ export default function PrivacyPolicy() {
         <Section number="7" title="Changes to This Policy">
           <p>
             We may update this Privacy Policy from time to time. Any changes
-            will be reflected on this page with an updated "Last Updated" date.
+            will be reflected on this page with an updated &apos;Last Updated&apos; date.
             Continued use of the app after changes constitutes acceptance of the
             revised policy. We encourage you to review this page periodically.
           </p>
@@ -277,7 +277,7 @@ export default function PrivacyPolicy() {
         <Section number="8" title="Contact Us">
           <p className="mb-4">
             If you have any questions or concerns about this Privacy Policy or
-            the app's data practices, please feel free to reach out:
+            the app&apos;s data practices, please feel free to reach out:
           </p>
           <div className="card rounded-xl p-5 flex items-center gap-4">
             <div className="w-10 h-10 rounded-xl bg-[#63d4b4]/10 flex items-center justify-center flex-shrink-0">
