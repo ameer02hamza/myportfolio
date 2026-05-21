@@ -55,8 +55,15 @@ export const educationList = [
 ];
 
 export const workExperienceList = [
+    {
+    duration: "Feb 2025- Present",
+    title: "Software Developer",
+    institution: "Future Heights Technical Services",
+    location: "Dubai, UAE",
+    link: "https://www.futurehts.com/",
+  },
   {
-    duration: "Oct 2022- Present",
+    duration: "Oct 2022- Feb 2025",
     title: "Software Developer",
     institution: "ICAD-KSA",
     location: "Abu Dhabi, UAE",
